@@ -6,19 +6,6 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTest1
 {
-	TEST_CLASS(UnitTest1)
-	{
-	public:
-
-		TEST_METHOD(correct_size)
-		{
-			int i;
-			int Array[] = { 20, 1, 23, 78, 498 };
-			int size = sizeof(Array);
-			Input(Array, 5);
-			Assert::IsTrue(5 == size);
-		}
-	};
 	TEST_CLASS(UnitTest2)
 	{
 	public:
@@ -54,21 +41,7 @@ namespace UnitTest1
 			}
 		}
 	};
-
-
-	TEST_CLASS(UnitTest4)
-	{
-	public:
-
-		TEST_METHOD(array_is_born)
-		{
-			int Array[] = { 23, 78, 1, 20, 498 };
-			Input(Array, 5);
-			int x = Array[0];
-			Assert::IsTrue(1 == x);
-
-		};
-	};
+	
 	TEST_CLASS(UnitTest5)
 	{
 	public:
